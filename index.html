@@ -58,15 +58,11 @@
     .nav-mob{display:flex !important}
     .contact-grid{grid-template-columns:1fr !important}
     .services-grid{grid-template-columns:repeat(2,1fr) !important}
-    .insp-grid{grid-template-columns:1fr !important}
-    .stats-grid{grid-template-columns:repeat(3,1fr) !important}
   }
   @media(max-width:600px){
     .hero-h1{font-size:60px !important; letter-spacing:-2px !important}
     .services-grid{grid-template-columns:1fr !important}
     .stock-grid{grid-template-columns:1fr !important}
-    .stats-grid{grid-template-columns:1fr !important}
-    .insp-checks{grid-template-columns:1fr !important}
     #mob-bar{display:flex !important}
     section{padding:70px 20px}
   }
@@ -96,9 +92,8 @@
 
   <div class="nav-links" style="display:flex;align-items:center;gap:2px;">
     <a href="#nosotros" class="nav-link" style="color:rgba(242,241,238,0.58);font-size:14px;font-weight:500;text-decoration:none;padding:8px 14px;transition:color .2s;">Nosotros</a>
-    <a href="#servicios" class="nav-link" style="color:rgba(242,241,238,0.58);font-size:14px;font-weight:500;text-decoration:none;padding:8px 14px;transition:color .2s;">Servicios</a>
-    <a href="#inspeccion" class="nav-link" style="color:rgba(242,241,238,0.58);font-size:14px;font-weight:500;text-decoration:none;padding:8px 14px;transition:color .2s;">Inspección</a>
     <a href="#stock" class="nav-link" style="color:rgba(242,241,238,0.58);font-size:14px;font-weight:500;text-decoration:none;padding:8px 14px;transition:color .2s;">Stock</a>
+    <a href="#servicios" class="nav-link" style="color:rgba(242,241,238,0.58);font-size:14px;font-weight:500;text-decoration:none;padding:8px 14px;transition:color .2s;">Servicios</a>
     <a href="#contacto" class="nav-link" style="color:rgba(242,241,238,0.58);font-size:14px;font-weight:500;text-decoration:none;padding:8px 14px;transition:color .2s;">Contacto</a>
     <div style="width:1px;height:18px;background:rgba(255,255,255,0.1);margin:0 8px;"></div>
     <a href="#" id="ig-link-nav" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);color:#f2f1ee;transition:all .2s;">
@@ -158,63 +153,7 @@
 
     <h2 id="nosotros-titulo" style="font-size:clamp(26px,4.5vw,46px);font-weight:700;line-height:1.25;letter-spacing:-.5px;max-width:680px;margin:0 auto 20px;"></h2>
 
-    <p id="nosotros-texto" style="font-size:17px;line-height:1.72;color:rgba(242,241,238,0.55);max-width:520px;margin:0 auto 68px;"></p>
-
-    <div class="stats-grid" id="stats-grid" style="display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,0.07);border-radius:18px;overflow:hidden;"></div>
-  </div>
-</section>
-
-
-<!-- ═══ SERVICIOS ═══ -->
-<section id="servicios">
-  <div style="max-width:1160px;margin:0 auto;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:52px;">
-      <div>
-        <div class="eyebrow" id="servicios-eyebrow"></div>
-        <h2 id="servicios-titulo" style="font-size:clamp(26px,4vw,40px);font-weight:700;letter-spacing:-.5px;line-height:1.2;"></h2>
-      </div>
-      <p id="servicios-texto" style="font-size:14px;color:rgba(242,241,238,0.4);max-width:260px;line-height:1.65;"></p>
-    </div>
-
-    <div class="services-grid" id="servicios-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:14px;"></div>
-  </div>
-</section>
-
-
-<!-- ═══ INSPECCIÓN ═══ -->
-<section id="inspeccion" style="background:#0d0d0c;position:relative;overflow:hidden;">
-  <div style="position:relative;z-index:1;max-width:1100px;margin:0 auto;">
-    <div class="insp-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
-
-      <div>
-        <div class="eyebrow" id="insp-eyebrow"></div>
-        <h2 style="font-size:clamp(26px,4vw,42px);font-weight:700;letter-spacing:-.5px;line-height:1.2;margin-bottom:20px;">
-          <span id="insp-titulo1"></span><br><span id="insp-titulo2" style="color:rgba(242,241,238,0.5);font-weight:400;"></span>
-        </h2>
-        <p id="insp-parrafo1" style="font-size:16px;line-height:1.72;color:rgba(242,241,238,0.6);margin-bottom:16px;"></p>
-        <p id="insp-parrafo2" style="font-size:16px;line-height:1.72;color:rgba(242,241,238,0.6);margin-bottom:32px;"></p>
-        <div style="display:flex;align-items:center;gap:10px;padding:16px 18px;background:rgba(201,168,106,0.07);border:1px solid rgba(201,168,106,0.2);border-radius:12px;margin-bottom:32px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          <span id="insp-nota" style="font-size:14px;color:rgba(242,241,238,0.75);font-weight:500;"></span>
-        </div>
-        <a href="#" id="insp-boton" target="_blank" rel="noopener" class="btn-gold">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
-          <span id="insp-boton-texto"></span>
-        </a>
-      </div>
-
-      <div>
-        <div style="background:#111110;border:1px solid rgba(255,255,255,0.07);border-radius:18px;padding:36px 32px;">
-          <div id="insp-checklist-titulo" style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a86a;font-weight:600;margin-bottom:24px;"></div>
-          <div class="insp-checks" id="insp-checklist" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;"></div>
-          <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;gap:10px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(242,241,238,0.35)" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            <span id="insp-footer-nota" style="font-size:13px;color:rgba(242,241,238,0.4);"></span>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <p id="nosotros-texto" style="font-size:17px;line-height:1.72;color:rgba(242,241,238,0.55);max-width:520px;margin:0 auto;"></p>
   </div>
 </section>
 
@@ -235,6 +174,22 @@
 </section>
 
 
+<!-- ═══ SERVICIOS ═══ -->
+<section id="servicios">
+  <div style="max-width:1160px;margin:0 auto;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:52px;">
+      <div>
+        <div class="eyebrow" id="servicios-eyebrow"></div>
+        <h2 id="servicios-titulo" style="font-size:clamp(26px,4vw,40px);font-weight:700;letter-spacing:-.5px;line-height:1.2;"></h2>
+      </div>
+      <p id="servicios-texto" style="font-size:14px;color:rgba(242,241,238,0.4);max-width:260px;line-height:1.65;"></p>
+    </div>
+
+    <div class="services-grid" id="servicios-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;"></div>
+  </div>
+</section>
+
+
 <!-- ═══ CONTACTO ═══ -->
 <section id="contacto">
   <div style="max-width:1160px;margin:0 auto;">
@@ -246,33 +201,33 @@
         <p id="contacto-texto" style="font-size:16px;line-height:1.68;color:rgba(242,241,238,0.52);margin-bottom:40px;max-width:360px;"></p>
 
         <div style="display:flex;flex-direction:column;gap:10px;">
-          <a href="#" id="contacto-wa" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#111110;border:1px solid rgba(255,255,255,0.06);border-radius:14px;text-decoration:none;color:#f2f1ee;transition:all .25s;">
-            <div style="width:44px;height:44px;background:rgba(201,168,106,0.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#c9a86a"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          <a href="#" id="contacto-wa" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:20px;padding:22px 26px;background:#111110;border:1.5px solid rgba(201,168,106,0.3);border-radius:16px;text-decoration:none;color:#f2f1ee;transition:all .25s;">
+            <div style="width:56px;height:56px;background:rgba(201,168,106,0.16);border:1.5px solid rgba(201,168,106,0.55);border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="#c9a86a"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
             </div>
             <div>
-              <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(242,241,238,0.35);margin-bottom:3px;font-weight:500;">WhatsApp</div>
-              <div id="contacto-wa-numero" style="font-size:15px;font-weight:600;"></div>
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(242,241,238,0.45);margin-bottom:4px;font-weight:600;">WhatsApp</div>
+              <div id="contacto-wa-numero" style="font-size:17px;font-weight:700;"></div>
             </div>
           </a>
 
-          <a href="#" id="contacto-ig" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#111110;border:1px solid rgba(255,255,255,0.06);border-radius:14px;text-decoration:none;color:#f2f1ee;transition:all .25s;">
-            <div style="width:44px;height:44px;background:rgba(201,168,106,0.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="#c9a86a" stroke="none"></circle></svg>
+          <a href="#" id="contacto-ig" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:20px;padding:22px 26px;background:#111110;border:1.5px solid rgba(201,168,106,0.3);border-radius:16px;text-decoration:none;color:#f2f1ee;transition:all .25s;">
+            <div style="width:56px;height:56px;background:rgba(201,168,106,0.16);border:1.5px solid rgba(201,168,106,0.55);border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="#c9a86a" stroke="none"></circle></svg>
             </div>
             <div>
-              <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(242,241,238,0.35);margin-bottom:3px;font-weight:500;">Instagram</div>
-              <div id="contacto-ig-usuario" style="font-size:15px;font-weight:600;"></div>
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(242,241,238,0.45);margin-bottom:4px;font-weight:600;">Instagram</div>
+              <div id="contacto-ig-usuario" style="font-size:17px;font-weight:700;"></div>
             </div>
           </a>
 
-          <a href="#" id="contacto-mapa-link" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#111110;border:1px solid rgba(255,255,255,0.06);border-radius:14px;text-decoration:none;color:#f2f1ee;transition:all .25s;">
-            <div style="width:44px;height:44px;background:rgba(201,168,106,0.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <a href="#" id="contacto-mapa-link" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:20px;padding:22px 26px;background:#111110;border:1.5px solid rgba(201,168,106,0.3);border-radius:16px;text-decoration:none;color:#f2f1ee;transition:all .25s;">
+            <div style="width:56px;height:56px;background:rgba(201,168,106,0.16);border:1.5px solid rgba(201,168,106,0.55);border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             </div>
             <div>
-              <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(242,241,238,0.35);margin-bottom:3px;font-weight:500;">Ubicación</div>
-              <div id="contacto-direccion-corta" style="font-size:15px;font-weight:600;"></div>
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(242,241,238,0.45);margin-bottom:4px;font-weight:600;">Ubicación</div>
+              <div id="contacto-direccion-corta" style="font-size:17px;font-weight:700;"></div>
             </div>
           </a>
         </div>
@@ -336,17 +291,167 @@ function waLink(numero, mensaje) {
   return mensaje ? base + '?text=' + encodeURIComponent(mensaje) : base;
 }
 
-async function loadJSON(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error('No se pudo cargar ' + path);
-  return res.json();
+// ====== CONFIGURACIÓN DEL GOOGLE SHEET ======
+// Reemplazar estas 3 URLs por las de "Publicar en la web" de cada hoja (formato CSV).
+// Archivo > Compartir > Publicar en la web > elegir la hoja > formato CSV > Publicar
+const SHEET_URLS = {
+  hero:   'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2HFlV9ggvjHyKhx5rSNFmynlshvdtPKEOXauQiT9M6nvRr6aDzIgghrWTEQ28DQ/pub?gid=808380826&single=true&output=csv',
+  stock:  'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2HFlV9ggvjHyKhx5rSNFmynlshvdtPKEOXauQiT9M6nvRr6aDzIgghrWTEQ28DQ/pub?gid=1564858216&single=true&output=csv',
+  textos: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2HFlV9ggvjHyKhx5rSNFmynlshvdtPKEOXauQiT9M6nvRr6aDzIgghrWTEQ28DQ/pub?gid=564050727&single=true&output=csv'
+};
+// =============================================
+
+// Convierte un link de Google Drive "compartir" a un link de imagen directa
+function driveLinkToImageUrl(url) {
+  if (!url) return '';
+  url = url.trim();
+  const m = url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/id=([a-zA-Z0-9_-]+)/);
+  if (m && m[1]) {
+    return 'https://lh3.googleusercontent.com/d/' + m[1];
+  }
+  return url; // si ya es un link directo o no es de Drive, se usa tal cual
+}
+
+// Parser CSV simple (soporta comillas y comas dentro de celdas)
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i], next = text[i+1];
+    if (inQuotes) {
+      if (c === '"' && next === '"') { field += '"'; i++; }
+      else if (c === '"') { inQuotes = false; }
+      else { field += c; }
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\r') { /* skip */ }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+      else { field += c; }
+    }
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  return rows.filter(r => r.some(cell => cell.trim() !== ''));
+}
+
+async function loadSheetCSV(url) {
+  const res = await fetch(url + (url.includes('?') ? '&' : '?') + 'cb=' + Date.now());
+  if (!res.ok) throw new Error('No se pudo cargar la hoja: ' + url);
+  const text = await res.text();
+  const rows = parseCSV(text);
+  return rows;
+}
+
+function rowsToObjects(rows, headerRowIndex) {
+  const headers = rows[headerRowIndex].map(h => h.trim());
+  return rows.slice(headerRowIndex + 1)
+    .filter(r => r.some(c => c.trim() !== ''))
+    .map(r => {
+      const obj = {};
+      headers.forEach((h, i) => obj[h] = (r[i] || '').trim());
+      return obj;
+    });
+}
+
+async function buildHeroImages() {
+  const rows = await loadSheetCSV(SHEET_URLS.hero);
+  const headerIdx = rows.findIndex(r => r.some(c => c.trim().toLowerCase() === 'orden'));
+  const objs = rowsToObjects(rows, headerIdx);
+  return objs
+    .filter(o => {
+      const activa = (o['Activa (SI/NO)'] || o['Activa'] || 'SI').toUpperCase();
+      const link = o['Link de la foto (Google Drive)'] || o['Link de la foto'] || '';
+      return activa !== 'NO' && link && !link.toUpperCase().startsWith('PEGAR');
+    })
+    .sort((a,b) => (parseInt(a['Orden']) || 0) - (parseInt(b['Orden']) || 0))
+    .map(o => driveLinkToImageUrl(o['Link de la foto (Google Drive)'] || o['Link de la foto']));
+}
+
+async function buildStock() {
+  const rows = await loadSheetCSV(SHEET_URLS.stock);
+  const headerIdx = rows.findIndex(r => r.some(c => c.trim().toLowerCase().startsWith('estado')));
+  const objs = rowsToObjects(rows, headerIdx);
+  return objs
+    .filter(o => (o['Marca y Modelo'] || '').trim() !== '')
+    .map((o, i) => {
+      const fotos = [1,2,3,4,5,6]
+        .map(n => o['Foto ' + n] || '')
+        .filter(v => v.trim() !== '' && !v.toUpperCase().startsWith('PEGAR'))
+        .map(driveLinkToImageUrl);
+      return {
+        id: i + 1,
+        estado: o['Estado (Disponible/Reservado)'] || o['Estado'] || 'Disponible',
+        anio: o['Año'] || '',
+        marca_modelo: o['Marca y Modelo'] || '',
+        km: o['Kilómetros'] || o['Kilometros'] || '',
+        precio: o['Precio (dejar vacio = Consultar precio)'] || o['Precio'] || '',
+        fotos: fotos
+      };
+    });
+}
+
+async function buildContent() {
+  const rows = await loadSheetCSV(SHEET_URLS.textos);
+  const headerIdx = rows.findIndex(r => r.some(c => c.trim().toLowerCase() === 'campo'));
+  const objs = rowsToObjects(rows, headerIdx);
+  const get = (campo, fallback) => {
+    const found = objs.find(o => o['Campo'] === campo);
+    return found ? found['Texto actual'] : fallback;
+  };
+
+  return {
+    contacto: {
+      whatsapp: { numero_link: '5491123868026', numero_visible: get('whatsapp_numero', '+54 9 11 2386-8026') },
+      instagram: { usuario: get('instagram_usuario', '@four.motorsok'), url: 'https://instagram.com/four.motorsok' },
+      ubicacion: {
+        nombre_lugar: get('direccion_lugar', 'Nuevo Quilmes Plaza'),
+        direccion_corta: get('direccion_corta', 'Av. Caseros 1750, Don Bosco'),
+        direccion_completa: 'Av. Caseros 1750, B1876<br>Don Bosco, Buenos Aires',
+        query_mapa: 'Av.+Caseros+1750,+Don+Bosco,+Buenos+Aires,+Argentina'
+      },
+      eyebrow: 'Contacto',
+      titulo: get('Contacto_titulo', '¿Encontraste tu auto?'),
+      texto: get('Contacto_texto', 'Escribinos y coordinamos todo: visita, prueba de manejo, papeles y entrega. Sin vueltas, como entre amigos.')
+    },
+    hero: {
+      eyebrow: get('eyebrow', 'Compra · Venta · Permuta'),
+      titulo: 'four.',
+      subtitulo: 'MOTORS — BS AS',
+      texto: get('texto', 'Somos un grupo de amigos que nos apasionan los autos. Te ayudamos a encontrar el que soñás, de forma personalizada y acompañándote en todo el proceso.'),
+      boton_principal: get('boton_principal', 'Ver servicios'),
+      boton_secundario: get('boton_secundario', 'Hablar por WhatsApp')
+    },
+    nosotros: {
+      eyebrow: 'Quiénes somos',
+      titulo: get('Nosotros_titulo', 'No somos una concesionaria. Somos personas que entienden lo que buscás.'),
+      texto: get('Nosotros_texto', 'Acompañamiento personalizado, transparencia total y la gestión completa que ningún concesionario te va a dar.')
+    },
+    servicios: {
+      eyebrow: 'Lo que hacemos',
+      titulo: get('Servicios_titulo', 'Todo lo que necesitás para mover tu auto.'),
+      texto: get('Servicios_texto', 'Elegí el servicio que necesitás y nosotros nos encargamos del resto.'),
+      lista: [
+        { numero:'01', icono:'search', titulo: get('servicio_1_titulo','Compra'), texto: get('servicio_1_texto','Encontramos el auto que soñás. Accedemos a stock privado con precios que solo nosotros conseguimos. Con opciones de financiación.') },
+        { numero:'02', icono:'trending-up', titulo: get('servicio_2_titulo','Venta'), texto: get('servicio_2_texto','Vendemos tu auto al mejor precio. Fotos, publicación y negociación — todo por vos, sin estrés. También podés hacerlo por consignación.') },
+        { numero:'03', icono:'swap', titulo: get('servicio_3_titulo','Permuta'), texto: get('servicio_3_texto','¿Querés cambiar tu auto? Gestionamos la permuta con o sin diferencia, de forma transparente.') },
+        { numero:'04', icono:'shield', titulo: get('servicio_4_titulo','Inspección para compra'), texto: get('servicio_4_texto','Revisamos mecánica, papeles, infracciones y deudas antes de que compres, para que decidas seguro.') }
+      ]
+    },
+    stock: {
+      eyebrow: 'Disponible ahora',
+      titulo: 'Stock de autos',
+      boton_ver_todo: 'Ver todo el stock →',
+      boton_ver_todo_mensaje_wa: 'Hola! Quiero ver todo el stock disponible'
+    },
+    footer: { texto: get('Footer_texto', 'Four Motors · Bs As · Conectando personas con el auto que buscan.') }
+  };
 }
 
 async function init() {
-  const [content, heroImages, stock] = await Promise.all([
-    loadJSON('data/content.json'),
-    loadJSON('data/hero-images.json'),
-    loadJSON('data/stock.json')
+  const [heroImages, stock, content] = await Promise.all([
+    buildHeroImages(),
+    buildStock(),
+    buildContent()
   ]);
 
   // ---------- NAV scroll ----------
@@ -383,7 +488,7 @@ async function init() {
   document.getElementById('hero-eyebrow').innerHTML =
     '<span class="line"></span><span>' + content.hero.eyebrow + '</span>';
   document.getElementById('hero-titulo').innerHTML =
-    content.hero.titulo.replace('.', '<span style="color:#c9a86a;">.</span>');
+    content.hero.titulo.replace('.', '<span style="color:#f2f1ee;">.</span>');
   document.getElementById('hero-subtitulo').textContent = content.hero.subtitulo;
   document.getElementById('hero-texto').textContent = content.hero.texto;
 
@@ -415,16 +520,6 @@ async function init() {
   document.getElementById('nosotros-titulo').textContent = content.nosotros.titulo;
   document.getElementById('nosotros-texto').textContent = content.nosotros.texto;
 
-  const statsGrid = document.getElementById('stats-grid');
-  content.nosotros.stats.forEach((s, i) => {
-    const div = document.createElement('div');
-    div.style.cssText = 'padding:40px 20px;text-align:center;' + (i < content.nosotros.stats.length-1 ? 'border-right:1px solid rgba(255,255,255,0.055);' : '');
-    div.innerHTML = `
-      <div style="font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1;">${s.numero}<span style="color:#c9a86a;font-size:38px;">${s.sufijo}</span></div>
-      <div style="font-size:13px;color:rgba(242,241,238,0.38);margin-top:8px;font-weight:500;">${s.label}</div>`;
-    statsGrid.appendChild(div);
-  });
-
   // ---------- SERVICIOS ----------
   document.getElementById('servicios-eyebrow').textContent = content.servicios.eyebrow;
   document.getElementById('servicios-titulo').textContent = content.servicios.titulo;
@@ -444,30 +539,6 @@ async function init() {
     servGrid.appendChild(div);
   });
 
-  // ---------- INSPECCIÓN ----------
-  document.getElementById('insp-eyebrow').innerHTML = '<span class="line"></span><span>' + content.inspeccion.eyebrow + '</span>';
-  document.getElementById('insp-titulo1').textContent = content.inspeccion.titulo_linea1;
-  document.getElementById('insp-titulo2').textContent = content.inspeccion.titulo_linea2;
-  document.getElementById('insp-parrafo1').textContent = content.inspeccion.parrafo1;
-  document.getElementById('insp-parrafo2').textContent = content.inspeccion.parrafo2;
-  document.getElementById('insp-nota').textContent = content.inspeccion.nota;
-  document.getElementById('insp-boton').href = waLink(waNumero, content.inspeccion.boton_mensaje_wa);
-  document.getElementById('insp-boton-texto').textContent = content.inspeccion.boton;
-  document.getElementById('insp-checklist-titulo').textContent = content.inspeccion.checklist_titulo;
-  document.getElementById('insp-footer-nota').textContent = content.inspeccion.footer_nota;
-
-  const checkSvg = '<svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#c9a86a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
-  const checklistEl = document.getElementById('insp-checklist');
-  content.inspeccion.checklist.forEach((item, i) => {
-    const div = document.createElement('div');
-    const isLast = i === content.inspeccion.checklist.length - 1 && content.inspeccion.checklist.length % 2 !== 0;
-    div.style.cssText = 'display:flex;align-items:center;gap:12px;padding:14px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;' + (isLast ? 'grid-column:1 / -1;' : '');
-    div.innerHTML = `
-      <div style="width:22px;height:22px;border-radius:50%;background:rgba(201,168,106,0.12);border:1px solid rgba(201,168,106,0.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;">${checkSvg}</div>
-      <span style="font-size:13px;font-weight:600;line-height:1.35;">${item}</span>`;
-    checklistEl.appendChild(div);
-  });
-
   // ---------- STOCK ----------
   document.getElementById('stock-eyebrow').textContent = content.stock.eyebrow;
   document.getElementById('stock-titulo').textContent = content.stock.titulo;
@@ -483,21 +554,44 @@ async function init() {
     const precioHTML = auto.precio
       ? `<div style="font-size:15px;color:#f2f1ee;font-weight:600;margin-bottom:20px;">${auto.precio}</div>`
       : `<div style="font-size:14px;color:rgba(242,241,238,0.38);font-style:italic;margin-bottom:20px;">Consultar precio</div>`;
+    const kmTexto = auto.km ? (/km/i.test(auto.km) ? auto.km : auto.km + ' km') : '';
+    const kmHTML = kmTexto
+      ? `<div style="font-size:13px;color:rgba(242,241,238,0.45);margin-bottom:14px;display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(242,241,238,0.45)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 12l4-2.5"></path><path d="M8 16l.5-1.5M16 16l-.5-1.5M7 10l1.5.8M17 10l-1.5.8"></path></svg>${kmTexto}</div>`
+      : '';
     const mensaje = 'Hola! Quiero consultar por el ' + auto.marca_modelo + ' ' + auto.anio;
+    const fotos = auto.fotos && auto.fotos.length ? auto.fotos : ['images/stock-placeholder.jpg'];
+    const carouselId = 'carousel-' + auto.id + '-' + Math.random().toString(36).slice(2,7);
+
+    const slidesHTML = fotos.map((f, i) =>
+      `<img src="${f}" alt="${auto.marca_modelo}" data-slide-index="${i}" style="width:100%;height:100%;object-fit:cover;display:${i===0?'block':'none'};position:absolute;inset:0;">`
+    ).join('');
+
+    const arrowsHTML = fotos.length > 1 ? `
+      <button class="carousel-prev" aria-label="Foto anterior" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:rgba(10,10,9,0.6);border:1px solid rgba(255,255,255,0.18);color:#f2f1ee;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;backdrop-filter:blur(4px);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="carousel-next" aria-label="Foto siguiente" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:rgba(10,10,9,0.6);border:1px solid rgba(255,255,255,0.18);color:#f2f1ee;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;backdrop-filter:blur(4px);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+      <div class="carousel-dots" style="position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:3;">
+        ${fotos.map((_, i) => `<span data-dot-index="${i}" style="width:5px;height:5px;border-radius:50%;background:${i===0?'#f2f1ee':'rgba(242,241,238,0.35)'};transition:background .2s;"></span>`).join('')}
+      </div>` : '';
 
     const card = document.createElement('article');
     card.style.cssText = 'background:#0f0f0e;border:1px solid rgba(255,255,255,0.06);border-radius:18px;overflow:hidden;transition:all .3s cubic-bezier(.22,1,.36,1);';
     card.addEventListener('mouseover', () => { card.style.transform='translateY(-5px)'; card.style.borderColor='rgba(201,168,106,0.25)'; });
     card.addEventListener('mouseout', () => { card.style.transform='translateY(0)'; card.style.borderColor='rgba(255,255,255,0.06)'; });
     card.innerHTML = `
-      <div style="position:relative;height:210px;overflow:hidden;background:#1a1a18;">
-        <img src="${auto.foto}" alt="${auto.marca_modelo}" style="width:100%;height:100%;object-fit:cover;display:block;">
-        <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(10,10,9,0.5) 100%);"></div>
-        <div style="position:absolute;top:14px;left:14px;${tagStyle}backdrop-filter:blur(8px);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:100px;font-weight:600;">${auto.estado}</div>
+      <div class="carousel" id="${carouselId}" style="position:relative;height:210px;overflow:hidden;background:#1a1a18;">
+        ${slidesHTML}
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(10,10,9,0.5) 100%);z-index:1;pointer-events:none;"></div>
+        <div style="position:absolute;top:14px;left:14px;${tagStyle}backdrop-filter:blur(8px);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:100px;font-weight:600;z-index:2;">${auto.estado}</div>
+        ${arrowsHTML}
       </div>
       <div style="padding:22px 24px 26px;">
         <div style="font-size:10px;letter-spacing:2px;color:#c9a86a;font-weight:700;margin-bottom:5px;text-transform:uppercase;">${auto.anio}</div>
-        <h3 style="font-size:20px;font-weight:700;letter-spacing:-.3px;margin-bottom:4px;">${auto.marca_modelo}</h3>
+        <h3 style="font-size:20px;font-weight:700;letter-spacing:-.3px;margin-bottom:8px;">${auto.marca_modelo}</h3>
+        ${kmHTML}
         ${precioHTML}
         <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:16px;">
           <a href="${waLink(waNumero, mensaje)}" target="_blank" rel="noopener" class="stock-cta" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#f2f1ee;text-decoration:none;transition:color .2s;">Consultar por WA →</a>
@@ -507,6 +601,26 @@ async function init() {
     const ctaLink = card.querySelector('.stock-cta');
     ctaLink.addEventListener('mouseover', () => ctaLink.style.color = '#c9a86a');
     ctaLink.addEventListener('mouseout', () => ctaLink.style.color = '#f2f1ee');
+
+    if (fotos.length > 1) {
+      const carouselEl = card.querySelector('#' + carouselId);
+      let current = 0;
+      const imgs = carouselEl.querySelectorAll('img[data-slide-index]');
+      const dots = carouselEl.querySelectorAll('span[data-dot-index]');
+      const showSlide = (idx) => {
+        imgs.forEach((img, i) => img.style.display = i === idx ? 'block' : 'none');
+        dots.forEach((dot, i) => dot.style.background = i === idx ? '#f2f1ee' : 'rgba(242,241,238,0.35)');
+        current = idx;
+      };
+      carouselEl.querySelector('.carousel-prev').addEventListener('click', (e) => {
+        e.preventDefault(); e.stopPropagation();
+        showSlide((current - 1 + fotos.length) % fotos.length);
+      });
+      carouselEl.querySelector('.carousel-next').addEventListener('click', (e) => {
+        e.preventDefault(); e.stopPropagation();
+        showSlide((current + 1) % fotos.length);
+      });
+    }
   });
 
   // ---------- CONTACTO ----------
@@ -525,8 +639,8 @@ async function init() {
   document.getElementById('contacto-mapa-iframe').src = 'https://maps.google.com/maps?q=' + content.contacto.ubicacion.query_mapa + '&output=embed';
 
   document.querySelectorAll('#contacto-wa, #contacto-ig, #contacto-mapa-link').forEach(a => {
-    a.addEventListener('mouseover', () => { a.style.borderColor='rgba(201,168,106,0.32)'; a.style.transform='translateX(5px)'; });
-    a.addEventListener('mouseout', () => { a.style.borderColor='rgba(255,255,255,0.06)'; a.style.transform='translateX(0)'; });
+    a.addEventListener('mouseover', () => { a.style.borderColor='rgba(201,168,106,0.75)'; a.style.transform='translateX(5px)'; });
+    a.addEventListener('mouseout', () => { a.style.borderColor='rgba(201,168,106,0.3)'; a.style.transform='translateX(0)'; });
   });
 
   // ---------- FOOTER ----------
