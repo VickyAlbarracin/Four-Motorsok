@@ -648,7 +648,7 @@ async function init() {
       </div>` : '';
 
     const card = document.createElement('article');
-    card.style.cssText = 'background:#0f0f0e;border:1px solid rgba(255,255,255,0.06);border-radius:18px;overflow:hidden;transition:all .3s cubic-bezier(.22,1,.36,1);';
+    card.style.cssText = 'background:#0f0f0e;border:1px solid rgba(255,255,255,0.06);border-radius:18px;overflow:hidden;transition:all .3s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column;height:100%;';
     card.addEventListener('mouseover', () => { card.style.transform='translateY(-5px)'; card.style.borderColor='rgba(201,168,106,0.25)'; });
     card.addEventListener('mouseout', () => { card.style.transform='translateY(0)'; card.style.borderColor='rgba(255,255,255,0.06)'; });
     card.innerHTML = `
@@ -658,12 +658,12 @@ async function init() {
         <div style="position:absolute;top:14px;left:14px;${tagStyle}backdrop-filter:blur(8px);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:100px;font-weight:600;z-index:2;">${auto.estado}</div>
         ${arrowsHTML}
       </div>
-      <div style="padding:22px 24px 26px;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
         <div style="font-size:10px;letter-spacing:2px;color:#c9a86a;font-weight:700;margin-bottom:5px;text-transform:uppercase;">${auto.anio}</div>
         <h3 style="font-size:20px;font-weight:700;letter-spacing:-.3px;margin-bottom:8px;">${auto.marca_modelo}</h3>
         ${kmHTML}
         ${precioHTML}
-        <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:16px;">
+        <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:16px;margin-top:auto;">
           <a href="${waLink(waNumero, mensaje)}" target="_blank" rel="noopener" class="stock-cta" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#f2f1ee;text-decoration:none;transition:color .2s;">Consultar por WhatsApp →</a>
         </div>
       </div>`;
